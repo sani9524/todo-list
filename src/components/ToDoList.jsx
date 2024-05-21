@@ -2,12 +2,12 @@ import React from 'react'
 import ToDoCard from './ToDoCard';
 
 export default function ToDoList(props) {
-  const{todos} = props
+  const{todos, handleDelete} = props
   return (
     <ul className='main'>
       {todos.map((todo, todoIndex) => {
         return (
-          <ToDoCard key={todoIndex}>
+          <ToDoCard {...props}key={todoIndex}>
             <p>{todo}</p>
           </ToDoCard>
         )
