@@ -1,7 +1,7 @@
 import {useState} from 'react'
 export default function ToDoInput(props){
-    const {handleUpdate} = props
-    const [todoValue, setTodoValue] = useState('')
+    const {handleUpdate, todoValue, setTodoValue} = props
+    
     return(
         <header>
             <input value ={todoValue} onChange={(e)=>{
